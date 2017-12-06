@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+  margin: 0;
+  height: 100%;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  font: 14px/1.4 'Arial';
+   background:url(https://i.loli.net/2017/12/02/5a222154512d9.jpg)0 0 no-repeat;
+  background-size: cover;
+   background-attachment: fixed;
+   min-width: 1024px;
+  
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#wrap{
+    overflow: hidden;
+
+#header {
+      width: 100%;
+    height: 50px;
+    font-size: 12px;
+    background: #0099CC;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    vertical-align: middle;
+    font-size: 16px;
+
+  a {
+       display: block;
+        font-size: 15px;
+     margin-top: 1px;
+  }
+  
+  .user-area {
+        padding-right: 16px;
+    float: right;
+    height: 100%;
+
+    li {
+      float: left;
+    margin-left: 14px;
+    line-height: 50px;
+    height: 100%;
+
+      span {
+        color: #fff;
+        display: block;
+       
+      }
+    }
+
+    img {
+          height: 38px;
+    margin-top: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    }
+  }
+
+  .setting{
+    float: right;
+    margin-left: 9px;
+    display: none;
+  }
+  .add-note{
+        float: left;
+    margin-left: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px 9px;
+    display: block;
+    margin-top: 9px;
+  }
+  .login{
+    float: right;
+    margin-left: 16px;
+  }
+
+
+}
+}
+
+
+#content{
+  position: relative;
+  height: -webkit-calc(100% - 30px);
+  height: calc(100% - 30px);
+  margin-top: 50px;
+}
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+.stars, .twinkling{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+
+  z-index:-2;
+}
+
+.twinkling{
+  background:transparent url(http://7xpvnv.com2.z0.glb.qiniucdn.com/493b97e6-c499-4b41-a26b-8942873615b0.png) repeat top center;
+  z-index:-1;
+  animation:move-twink-back 200s linear infinite;
+  }

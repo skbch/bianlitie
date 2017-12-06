@@ -1,0 +1,71 @@
+.note{
+  position: absolute;;
+  color: #333;
+  width: 160px;
+  margin: 20px 10px;
+  transition: all 0.5s;
+
+  .note-head{
+    height: 20px;
+    background-color: #ea9b35;
+    cursor: move;
+
+    &:hover .delete{
+      opacity: 1;
+    }
+
+    &:before{
+     position: absolute;
+    left: 50%;
+    top: -9px;
+    margin-left: -10px;
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #F9C300;
+    border-radius: 50%;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.4);
+    }
+
+    &:after {
+      position: absolute;
+      left: 50%;
+      margin-left: 32px;
+      top: 0;
+      z-index: -1;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid #299683;
+      border-top: 18px solid transparent;
+    }
+  }
+
+  .note-ct{
+    padding: 10px;
+    background-color: #efb04e;
+    outline: none;
+  }
+
+  .delete {
+    position: absolute;
+    top: -6px;
+    right: 4px;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+}
+
+
+.draggable{
+  opacity: 0.8;
+  cursor:move;
+  transition: none;
+}
+
